@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val rollButton: Button = findViewById(R.id.button)  //setting the reference to the button
         rollButton.setOnClickListener { rollDice() } // setting the click listener
-        rollDice() //inital roll of the dice on start
+        rollDice() //initial roll of the dice on start
     }
 
     private fun rollDice() { //function that updates the ImageView with a random number drawable of the dice
